@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>ZTyping</title>
+
+	<!-- -----Styles----- -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
+	<link rel="stylesheet" href="./assets/css/certificate.css" media="all">
+
+	<!-- -----Scripts----- -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+	<!-- ----------Navbar---------- -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand logo" href="./index.html">Z<span>typing</span> </a>
+			<button class="navbar-toggler  border-0" data-toggle="collapse" data-target="#menu">
+				<i class="fas fa-bars text-light"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"> <a class="nav-link" href="./index.html">Typing-Test</a></li>
+					<li class="nav-item"><a class="nav-link" href="./certificate.html">Certificate</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- ----------Certificate---------- -->
+	<div class="certificate" id="certificate">
+		<!-- Design -->
+		<div class="design_1"></div>
+		<div class="design_2"></div>
+		<div class="ribbon"><i class="fas fa-award"></i></div>
+		<!-- Text -->
+		<div class="main">
+			<p>Certificate from Ztyping</p>
+			<p id="username">Mark Zuckerberg</p>
+			<p>is Certified in English Typing</p>
+			<p>with <span id="speed"> 199WMP </span>and<span id="accuracy"> 99% </span>accuracy </p>
+		</div>
+		<div class="bottom">
+			<div class="date" id="certificate-date">02/10/2021</div>
+			<div class="cr_no">ZR1242</div>
+		</div>
+	</div>
+
+	<div class="d-flex flex-column pb-5">
+		<button class="btn btn-warning mx-auto" id="print-certificate">
+			<span class="h6">PRINT</span>
+		</button>
+	</div>
+
+	<!-- ----------Footer---------- -->
+	<footer class="bg-dark mt-auto py-3 text-light">
+		<div class="container">
+			<p class="h6 text-center"><span class="text-warning">Note</span> It's a non profit certificate, just for
+				your motivation</p>
+			<p class="h6 m-0 text-center" style="letter-spacing:0.2px;font-size:14px;">Copyright &copy; 2020 by ZTyping
+			</p>
+		</div>
+	</footer>
+
+	<!-- ----------Certificate---------- -->
+	<script src="./assets/js/certificate.js" type="module"></script>
+</body>
+
+</html>
